@@ -1,0 +1,6 @@
+https://medium.com/laboratoria-how-to/introducci%C3%B3n-a-la-programaci%C3%B3n-funcional-en-javascript-parte-1-e0b1d0b2142e
+
+
+
+////////Generador manifest//////
+https://tomitm.github.io/appmanifest/

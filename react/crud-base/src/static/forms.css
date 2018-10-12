@@ -1,0 +1,9 @@
+.div-form {
+    border: 2px solid rgba(231, 231, 231, 0.918);
+    border-radius: 10px;
+    border-block-start-width: 5px;
+}
+
+.btn-guardar-form {
+    margin-left: 5px;
+}

@@ -1,0 +1,29 @@
+<div class="col-lg-12 ">
+  <h1>{{titulo}}</h1>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Tomate una foto</h5>
+          <webcam [trigger]="triggerObservable" [allowCameraSwitch]="false" [width]="335" [height]="300" (imageCapture)="getImage($event)">
+          </webcam>
+
+          <button (click)="capturarImage()" class="btn btn-success">Capturar</button>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <img *ngIf="webcAmImage" [src]="webcAmImage.imageAsDataUrl" style="width: 26.4rem;"
+           class="card-img-top" alt="Card image cap" />
+        <div class="card-body">
+          <h5 class="card-title">Tu foto!</h5>
+          <button *ngIf="webcAmImage"  class="btn btn-primary" (click)="descargarImage()"><i></i> Descargar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+</div>

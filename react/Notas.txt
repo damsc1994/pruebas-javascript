@@ -1,0 +1,2 @@
+/////Progressive render/////
+yarn add next react react-dom react-no-ssr

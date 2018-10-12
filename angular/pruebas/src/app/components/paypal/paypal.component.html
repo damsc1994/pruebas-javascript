@@ -1,0 +1,17 @@
+<div class="col-lg-12">
+  <h1>{{titulo}}</h1>
+  <div class="form-row">
+    <div class="form-group">
+      <label>Valor a Pagar</label>
+      <input type="number" min="0.01"  step="0.01" class="form-control col-lg-4" [(ngModel)]="valorPagar" required/>
+      <input type="button" (click)="getPagar()" value="Pagar con paypal"/>
+    </div>
+    &nbsp;
+    <div class="form-group">
+        <br>
+        <br>
+        <div id="paypal-button-container"></div>
+    </div>
+  </div>
+
+</div>
